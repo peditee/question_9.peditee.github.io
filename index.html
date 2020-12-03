@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .calculator {
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+    }
+    input {
+      min-height: 50px;
+      margin-bottom: 30px;
+      font-size: 25px;
+
+    }
+    .mode {
+      min-height: 50px;
+      margin-bottom: 30px;
+      font-size: 25px;
+
+    }
+
+    #btn {
+      min-height: 50px;
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+    #answer-box {
+      min-height: 50px;
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <form class="calculator">
+    Input 1 <input type="text" id="num1">
+    Input 2 <input type="text" id="num2">
+    Mode:
+    <select class="mode">
+      <option value="add">add</option>
+      <option value="subtract">subtract</option>
+      <option value="divide">divide</option>
+      <option value="multiply">multiply</option>
+      <option value="modulus">modulus</option>
+      <option value="powerof">powerof</option>
+      <option value="squareroot">sqrt</option>
+    </select>
+    <button id="btn" type="button">Calculate</button>
+  </form>
+  <div id="answer-box">
+    <div id="result"></div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
