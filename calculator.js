@@ -1,3 +1,4 @@
+
 function calc() {
   var input1 = parseInt(document.querySelector("#num1").value);
   var input2 = parseInt(document.querySelector("#num2").value);
